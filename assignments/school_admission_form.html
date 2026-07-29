@@ -11,10 +11,9 @@
         <section>
             <h1>School Admission Registration Form</h1>
             
-            <!-- Added enctype for file uploads -->
             <form method="post" action="/submit" enctype="multipart/form-data">
-                
-                <!-- Personal Information Section -->
+
+
                 <fieldset>
                     <legend>Personal Details</legend>
                     
@@ -53,7 +52,7 @@
                     </p>
                 </fieldset>
 
-                <!-- Origin & Contact Information Section -->
+                
                 <fieldset>
                     <legend>Origin & Address</legend>
                     
@@ -73,7 +72,8 @@
                     </p>
                 </fieldset>
 
-                <!-- Background & Guardian Information Section -->
+                
+
                 <fieldset>
                     <legend>Guardian & Academic Background</legend>
                     
@@ -83,25 +83,26 @@
                     </p>
                     
                     <p>
-                        <!-- Changed type to tel for phone numbers -->
+                    
                         <label for="guardian-phone">Parent/Guardian Phone Number:</label>
                         <input type="tel" id="guardian-phone" name="guardianPhone" placeholder="Parent/Guardian Phone Number" required>
                     </p>
                     
                     <p>
-                        <!-- Changed type to email for proper validation -->
+                        
+
                         <label for="guardian-email">Parent/Guardian Email:</label>
                         <input type="email" id="guardian-email" name="guardianEmail" placeholder="Parent/Guardian Email" required>
                     </p>
                     
                     <p>
                         <label for="prev-school">Previous School:</label>
-                        <input type="text" id="prev-school" name="previousSchool" placeholder="Previous School" required>
+                        <input type="text"  placeholder="Previous School" required>
                     </p>
                 </fieldset>
 
-                <!-- Form Actions -->
-                <div class="form-actions">
+
+                <div>
                     <button type="submit">Submit Application</button>
                     <button type="reset">Reset Form</button>
                 </div>
