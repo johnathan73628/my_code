@@ -6,26 +6,109 @@
     <title>School Registration Form</title>
 </head>
 <body>
-    <form>
-<form method="post" action="/submit">
-    <input type="text" placeholder="First Name" required>
-    <input type="text" placeholder="Middle Name" required>
-    <input type="text" placeholder="Last Name" >
-    <input type="file" placeholder="Upload Photo" >
-    <input type="date" placeholder="Date of Birth">
-    <select required>
-        <option value="male">Male</option>
-        <option value="female">Female</option>
-    </select>
-    <input type="text" placeholder="State of Origin" required>
-    <input type="text" placeholder="Local Government Area" required>
-    <input type="text" placeholder="Home Address" required>
-    <input type="text" placeholder="Parent/Guardian Name" required>
-    <input type="text" placeholder="Parent/Guardian Phone Number" required>
-    <input type="text" placeholder="Parent/Guardian Email" required>
-    <input type="text" placeholder="Previous School" required>
-    <button type="submit" required>Submit</button>
-    <button type="reset">Reset</button>
-</form>
+
+    <main>
+        <section>
+            <h1>School Admission Registration Form</h1>
+            
+            <!-- Added enctype for file uploads -->
+            <form method="post" action="/submit" enctype="multipart/form-data">
+                
+                <!-- Personal Information Section -->
+                <fieldset>
+                    <legend>Personal Details</legend>
+                    
+                    <p>
+                        <label for="first-name">First Name:</label>
+                        <input type="text" id="first-name" name="firstName" placeholder="First Name" required>
+                    </p>
+                    
+                    <p>
+                        <label for="middle-name">Middle Name:</label>
+                        <input type="text" id="middle-name" name="middleName" placeholder="Middle Name" required>
+                    </p>
+                    
+                    <p>
+                        <label for="last-name">Last Name:</label>
+                        <input type="text" id="last-name" name="lastName" placeholder="Last Name">
+                    </p>
+                    
+                    <p>
+                        <label for="student-photo">Upload Photo:</label>
+                        <input type="file" id="student-photo" name="studentPhoto" accept="image/*">
+                    </p>
+                    
+                    <p>
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" id="dob" name="dob">
+                    </p>
+                    
+                    <p>
+                        <label for="gender">Gender:</label>
+                        <select id="gender" name="gender" required>
+                            <option value="" disabled selected>Select Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </p>
+                </fieldset>
+
+                <!-- Origin & Contact Information Section -->
+                <fieldset>
+                    <legend>Origin & Address</legend>
+                    
+                    <p>
+                        <label for="state">State of Origin:</label>
+                        <input type="text" id="state" name="stateOfOrigin" placeholder="State of Origin" required>
+                    </p>
+                    
+                    <p>
+                        <label for="lga">Local Government Area (LGA):</label>
+                        <input type="text" id="lga" name="lga" placeholder="Local Government Area" required>
+                    </p>
+                    
+                    <p>
+                        <label for="address">Home Address:</label>
+                        <input type="text" id="address" name="homeAddress" placeholder="Home Address" required>
+                    </p>
+                </fieldset>
+
+                <!-- Background & Guardian Information Section -->
+                <fieldset>
+                    <legend>Guardian & Academic Background</legend>
+                    
+                    <p>
+                        <label for="guardian-name">Parent/Guardian Name:</label>
+                        <input type="text" id="guardian-name" name="guardianName" placeholder="Parent/Guardian Name" required>
+                    </p>
+                    
+                    <p>
+                        <!-- Changed type to tel for phone numbers -->
+                        <label for="guardian-phone">Parent/Guardian Phone Number:</label>
+                        <input type="tel" id="guardian-phone" name="guardianPhone" placeholder="Parent/Guardian Phone Number" required>
+                    </p>
+                    
+                    <p>
+                        <!-- Changed type to email for proper validation -->
+                        <label for="guardian-email">Parent/Guardian Email:</label>
+                        <input type="email" id="guardian-email" name="guardianEmail" placeholder="Parent/Guardian Email" required>
+                    </p>
+                    
+                    <p>
+                        <label for="prev-school">Previous School:</label>
+                        <input type="text" id="prev-school" name="previousSchool" placeholder="Previous School" required>
+                    </p>
+                </fieldset>
+
+                <!-- Form Actions -->
+                <div class="form-actions">
+                    <button type="submit">Submit Application</button>
+                    <button type="reset">Reset Form</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
 </body>
 </html>
