@@ -1,47 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>School Registration Form</title>
 </head>
+
 <body>
 
     <main>
         <section>
             <h1>School Admission Registration Form</h1>
-            
+
             <form method="post" action="/submit" enctype="multipart/form-data">
 
 
                 <fieldset>
                     <legend>Personal Details</legend>
-                    
+
                     <p>
                         <label for="first-name">First Name:</label>
                         <input type="text" id="first-name" name="firstName" placeholder="First Name" required>
                     </p>
-                    
+
                     <p>
                         <label for="middle-name">Middle Name:</label>
                         <input type="text" id="middle-name" name="middleName" placeholder="Middle Name" required>
                     </p>
-                    
+
                     <p>
                         <label for="last-name">Last Name:</label>
                         <input type="text" id="last-name" name="lastName" placeholder="Last Name">
                     </p>
-                    
+
                     <p>
                         <label for="student-photo">Upload Photo:</label>
                         <input type="file" id="student-photo" name="studentPhoto" accept="image/*">
                     </p>
-                    
+
                     <p>
                         <label for="dob">Date of Birth:</label>
                         <input type="date" id="dob" name="dob">
                     </p>
-                    
+
                     <p>
                         <label for="gender">Gender:</label>
                         <select id="gender" name="gender" required>
@@ -52,58 +54,61 @@
                     </p>
                 </fieldset>
 
-                
+
                 <fieldset>
                     <legend>Origin & Address</legend>
-                    
+
                     <p>
                         <label for="state">State of Origin:</label>
                         <input type="text" id="state" name="stateOfOrigin" placeholder="State of Origin" required>
                     </p>
-                    
+
                     <p>
                         <label for="lga">Local Government Area (LGA):</label>
                         <input type="text" id="lga" name="lga" placeholder="Local Government Area" required>
                     </p>
-                    
+
                     <p>
                         <label for="address">Home Address:</label>
                         <input type="text" id="address" name="homeAddress" placeholder="Home Address" required>
                     </p>
                 </fieldset>
 
-                
+
 
                 <fieldset>
                     <legend>Guardian & Academic Background</legend>
-                    
+
                     <p>
                         <label for="guardian-name">Parent/Guardian Name:</label>
-                        <input type="text" id="guardian-name" name="guardianName" placeholder="Parent/Guardian Name" required>
+                        <input type="text" id="guardian-name" name="guardianName" placeholder="Parent/Guardian Name"
+                            required>
                     </p>
-                    
+
                     <p>
-                    
+
                         <label for="guardian-phone">Parent/Guardian Phone Number:</label>
-                        <input type="tel" id="guardian-phone" name="guardianPhone" placeholder="Parent/Guardian Phone Number" required>
+                        <input type="tel" id="guardian-phone" name="guardianPhone"
+                            placeholder="Parent/Guardian Phone Number" required>
                     </p>
-                    
+
                     <p>
-                        
+
 
                         <label for="guardian-email">Parent/Guardian Email:</label>
-                        <input type="email" id="guardian-email" name="guardianEmail" placeholder="Parent/Guardian Email" required>
+                        <input type="email" id="guardian-email" name="guardianEmail" placeholder="Parent/Guardian Email"
+                            required>
                     </p>
-                    
+
                     <p>
                         <label for="prev-school">Previous School:</label>
-                        <input type="text"  placeholder="Previous School" required>
+                        <input type="text" placeholder="Previous School" required>
                     </p>
                 </fieldset>
 
 
                 <div>
-                    <button type="submit">Submit Application</button>
+                    <button type="submit">Submit</button>
                     <button type="reset">Reset Form</button>
                 </div>
 
@@ -112,4 +117,5 @@
     </main>
 
 </body>
+
 </html>
