@@ -1,0 +1,161 @@
+body {
+    background-color: aqua;
+    color: red;
+}
+
+header {
+    align-items: center;
+    text-align: center;
+    margin: 30px;
+}
+
+section {
+    margin: 30px;
+    padding: 20px;
+    border: 2px;
+    border-radius: 15px;
+
+}
+
+nav {
+    margin: 30px;
+    background-color: lightblue;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 15px;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+section{
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background: white;
+
+
+}
+
+footer{
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+body{
+    background-color: green;
+    font-family: italic;
+
+}
+
+.card{
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    background: blue;
+}
+
+.card img{
+    width: 150px;
+    height: 150px;
+    border-radius: 40px;
+    border: 3px, solid black;
+
+
+}
+
+.card h1{
+    color: white;
+}
+
+.card p{
+    color: red;
+    
+}
+
+.card1{
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    background: blue;
+}
+
+.card1 img{
+    width: 150px;
+    height: 150px;
+    border-radius: 40px;
+    border: 3px, solid black;
+}
+
+.card1 h1{
+    color: black;
+}
+
+.card1 p{
+    color: purple;
+}
+
+.card2{
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    background: blue;
+}
+
+.card2 img{
+    width: 150px;
+    height: 150px;
+    border-radius: 40px;
+    border: 3px, solid black;
+}
+
+.card2 h1{
+    color: white;
+}
+
+.card2 p{
+    color: red;
+}
+
+.card3{
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    background: blue;
+}
+
+.card3 img{
+    width: 150px;
+    height: 150px;
+    border-radius: 40px;
+    border: 3px, solid black;
+}
+
+.card3 h1{
+    color: white;
+}
+
+.card3 p{
+    color: red;
+}
