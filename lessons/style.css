@@ -63,7 +63,7 @@ footer {
     border-spacing: 10px;
 }
 
-.card img{
+.card img {
     width: 150px;
     height: 150px;
     border-radius: 40px;
@@ -72,85 +72,115 @@ footer {
 
 }
 
-.card h2{
+.card h2 {
     color: white;
     font-size: 30px;
 }
 
-.card p{
+.card p {
     color: red;
 }
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
+body {
     background-color: lightblue;
     font-family: sans-serif;
-    padding:40px;
+    padding: 40px;
 }
 
 h2 {
-    text-align:center;
-    margin-bottom:40px;
-    color:yellow;
+    text-align: center;
+    margin-bottom: 40px;
+    color: yellow;
 }
 
 /*container*/
 .container {
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.card{
-    width:300px;
-    text-align:center;
+.card {
+    width: 300px;
+    text-align: center;
 
 }
 
 
-.card img{
-    width:150px;
-    height:150px;
-    border-radius:50%;
-    margin-bottom:15px;
+.card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
 }
 
-.card h2{
-    margin-bottom:10px;
-    color:blue;
+.card h2 {
+    margin-bottom: 10px;
+    color: blue;
 }
 
-.card p{
-    line-height:1.6;
-    
+.card p {
+    line-height: 1.6;
+
 }
 
-.card1{
-    background-color:lightblue;
-    border-radius:10px;
-    margin:20px;
-    padding:20px;
-    border:4px solid black; 
+.card1 {
+    background-color: lightblue;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    border: 4px solid black;
 }
 
-.card2{
-    background-color:lightgreen;
-    border-radius:10px;
-    margin:20px;
-    padding:20px;
-    border:4px dotted yellow; 
+.card2 {
+    background-color: lightgreen;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    border: 4px dotted yellow;
 }
 
-.card3{
-    background-color:lightpink;
-    border-radius:10px;
-    margin:20px;
-    padding:20px;
-    border:4px dashed red;
+.card3 {
+    background-color: lightpink;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    border: 4px dashed red;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: red;
+    padding: 20px;
+}
+
+nav h1 {
+    color: blue;
+    text-decoration: none;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+
+nav a{
+    color:white;
+    text-decoration: none;
+    margin-left: 20px;
 }
 
