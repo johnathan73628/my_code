@@ -1,9 +1,37 @@
-let num1 = 115;
-let num2 = 118;
+// ADD
+function add(num1, num2) {
+    let result = num1 + num2;
+    console.log(result);
+}
 
-let sum = num1 + num2;
+// SUBTRACT
+function subtract(num1, num2) {
+    let result = num1 - num2;
+    console.log(result);
+}
 
-console.log("Sum=", sum);
-console.log("Difference=", num1 - num2);
-console.log("Product=", num1 * num2);
-console.log("Quotient=", num1 / num2);
+//MULTIPLICATION
+function multiply(num1, num2) {
+    let result = num1 * num2;
+    console.log(result);
+}
+
+// Division
+function divide(num1, num2) {
+    let result = num1 / num2;
+    console.log(result);
+}
+
+
+// AVERAGE
+function calculateAverage(num1, num2) {
+    let total = num1 + num2;
+    let average = total / 2;
+    console.log(`Average:${average}`)
+}
+
+add(2, 8);
+subtract(2, 8);
+multiply(2, 8);
+divide(2, 8);
+calculateAverage(2, 8);

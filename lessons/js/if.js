@@ -23,7 +23,8 @@ if (score >= 70) {
 
 
 //switch statement
-let day = 2;
+
+const day = 3;
 switch (day) {
     case 1:
         console.log("Monday");
@@ -38,6 +39,25 @@ switch (day) {
         break;
 
     default:
-        console.log("Invalid");
+        console.log("Unknown day");
 
 }
+
+// for loop
+
+for (let i=0; i<5; i++){
+    console.log(i);
+}
+
+let i = 0;
+while(i<5){
+    console.log(i);
+    i++;
+}
+
+// DO WHILE LOOP.
+let a = 1;
+do{
+    console.log(a);
+    a++;
+} while(a<5);
