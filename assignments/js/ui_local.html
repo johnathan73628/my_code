@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Preference</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>User Preference</h1>
+
+        <form id="preferenceForm">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter your username" required>
+
+            <label for="colour">Favourite Colour</label>
+            <input type="text" id="colour" placeholder="Enter your favourite colour" required>
+
+            <button type="submit">Save</button>
+        </form>
+
+        <div class="saved-info">
+            <h2>Saved Information</h2>
+
+            <p>
+                <strong>Username:</strong>
+                <span id="savedUsername">Not saved yet</span>
+            </p>
+
+            <p>
+                <strong>Favourite Colour:</strong>
+                <span id="savedColour">Not saved yet</span>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        const form = document.getElementById("preferenceForm");
+
+        const usernameInput = document.getElementById("username");
+        const colourInput = document.getElementById("colour");
+
+        const savedUsername = document.getElementById("savedUsername");
+        const savedColour = document.getElementById("savedColour");
+
+        // Save information
+        form.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const username = usernameInput.value.trim();
+            const colour = colourInput.value.trim();
+
+            // Save to Local Storage
+            localStorage.setItem("username", username);
+            localStorage.setItem("favouriteColour", colour);
+
+            // Display saved information
+            displaySavedInformation();
+        });
+
+        // Display saved information
+        function displaySavedInformation() {
+            const username = localStorage.getItem("username");
+            const colour = localStorage.getItem("favouriteColour");
+
+            if (username) {
+                savedUsername.textContent = username;
+                usernameInput.value = username;
+            }
+
+            if (colour) {
+                savedColour.textContent = colour;
+                colourInput.value = colour;
+
+                // Change the colour of the text to the user's favourite colour
+                savedColour.style.color = colour;
+            }
+        }
+
+        // Retrieve saved information when page loads
+        displaySavedInformation();
+    </script>
+</body>
+
+</html>

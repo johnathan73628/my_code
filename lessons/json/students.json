@@ -1,0 +1,39 @@
+{
+  "students": [
+    {
+      "name": "Samuel Ezikiel",
+      "age": 18,
+      "class": "SS2",
+      "gender": "Male",
+      "favoriteSubject": "Mathematics"
+    },
+    {
+      "name": "David Musa",
+      "age": 17,
+      "class": "SS2",
+      "gender": "Male",
+      "favoriteSubject": "Physics"
+    },
+    {
+      "name": "Mary John",
+      "age": 16,
+      "class": "SS1",
+      "gender": "Female",
+      "favoriteSubject": "Biology"
+    },
+    {
+      "name": "Sarah Ibrahim",
+      "age": 17,
+      "class": "SS2",
+      "gender": "Female",
+      "favoriteSubject": "English"
+    },
+    {
+      "name": "Daniel Peter",
+      "age": 18,
+      "class": "SS3",
+      "gender": "Male",
+      "favoriteSubject": "Chemistry"
+    }
+  ]
+}

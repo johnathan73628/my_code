@@ -1,0 +1,27 @@
+{
+    "name": "ezekiel",
+    "age": 20
+}
+
+{
+    "isStaff":true
+}
+
+{
+    "subject":["English", "Mathematics", "Physics"]
+}
+
+{
+    "staff": {
+        "name": "Ezekiel",
+        "position": "Auxilary"
+    }
+}
+
+const staff = {
+    "name": "ezekiel",
+    "age": 20
+
+};
+
+console.log(staff.age);
